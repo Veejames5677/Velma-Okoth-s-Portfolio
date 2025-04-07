@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Garlic Chicken Breast | Velma's Recipes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --light: #f9fafb;
+      --text-dark: #2c3e50;
+      --text-light: #666;
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f1f5f9;
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .recipe-actions {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .action-btn {
+      background: var(--light);
+      border: 1px solid #ddd;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.3s ease;
+    }
+
+    .action-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .recipe-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .meta-item strong {
+      color: var(--secondary);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .recipe-hero {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+
+    .nutrition-3d {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin: 2rem 0;
+      border-left: 4px solid var(--primary);
+      transform: perspective(1000px) rotateX(5deg);
+    }
+
+    .nutrition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+
+    .nutrient-card {
+      background: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .nutrient-value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--text-dark);
+    }
+
+    .nutrient-label {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Velma Akoth Katito</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="recipe-page">
+    <div class="container">
+      <section class="recipe-header">
+        <h1>Honey Garlic Chicken Breast</h1>
+        <p>This honey garlic chicken is perfectly juicy and tender with the most incredible sticky sauce. Quick and easy to make!</p>
+
+        <div class="recipe-actions">
+          <button class="action-btn" aria-label="Print recipe" onclick="window.print()">
+            <i class="fas fa-print"></i> Print
+          </button>
+          <button class="action-btn" aria-label="Email recipe" onclick="window.location.href='mailto:?subject=Honey Garlic Chicken Recipe&body=Check this out: ' + window.location.href;">
+            <i class="fas fa-envelope"></i> Email
+          </button>
+        </div>
+
+        <div class="recipe-meta-grid">
+          <div class="meta-item"><strong>Course</strong>Main Course</div>
+          <div class="meta-item"><strong>Cuisine</strong>International</div>
+          <div class="meta-item"><strong>Prep Time</strong>10 minutes</div>
+          <div class="meta-item"><strong>Cook Time</strong>15 minutes</div>
+          <div class="meta-item"><strong>Total Time</strong>25 minutes</div>
+          <div class="meta-item"><strong>Servings</strong>4 servings</div>
+          <div class="meta-item"><strong>Calories</strong>320 kcal</div>
+        </div>
+
+        <img src="Double Crunch Honey Garlic Chicken Breasts.jpg" alt="Delicious Honey Garlic Chicken Breast" class="recipe-hero">
+      </section>
+
+      <section class="recipe-content">
+        <article class="ingredients">
+          <h2><i class="fas fa-shopping-basket"></i> Ingredients</h2>
+          <ul>
+            <li>4 boneless, skinless chicken breasts</li>
+            <li>Salt and pepper, to taste</li>
+            <li>2 tablespoons olive oil</li>
+            <li>4 cloves garlic, minced</li>
+            <li>1/4 cup honey</li>
+            <li>2 tablespoons soy sauce</li>
+            <li>1 tablespoon apple cider vinegar</li>
+            <li>1/2 teaspoon red pepper flakes (optional)</li>
+            <li>1 tablespoon chopped fresh parsley, for garnish</li>
+          </ul>
+        </article>
+
+        <article class="instructions">
+          <h2><i class="fas fa-list-ol"></i> Instructions</h2>
+          <ol>
+            <li>Season chicken with salt and pepper.</li>
+            <li>Heat olive oil in a large skillet over medium-high heat. Cook chicken 5–6 minutes per side until golden and cooked through (165°F internal temp). Set aside.</li>
+            <li>In the same pan, sauté garlic for 30 seconds.</li>
+            <li>Add honey, soy sauce, vinegar, and red pepper flakes. Simmer briefly.</li>
+            <li>Return chicken to skillet, coat with sauce, and simmer 2–3 minutes.</li>
+            <li>Garnish with parsley. Serve hot.</li>
+          </ol>
+        </article>
+
+        <aside class="recipe-notes">
+          <h3><i class="fas fa-sticky-note"></i> Notes</h3>
+          <p>For even cooking, use breasts of similar thickness or pound them to 1/2-inch. Sauce also works bomb with chicken thighs or salmon. Leftovers? Chill in an airtight container for up to 3 days.</p>
+        </aside>
+
+        <section class="nutrition-3d">
+          <h2><i class="fas fa-chart-pie"></i> Nutrition (per serving)</h2>
+          <div class="nutrition-grid">
+            <div class="nutrient-card">
+              <div class="nutrient-value">320</div>
+              <div class="nutrient-label">Calories</div>
+            </div>
+            <div class="nutrient-card">
+              <div class="nutrient-value">22g</div>
+              <div class="nutrient-label">Carbs</div>
+            </div>
+            <div class="nutrient-card">
+              <div class="nutrient-value">36g</div>
+              <div class="nutrient-label">Protein</div>
+            </div>
+            <div class="nutrient-card">
+              <div class="nutrient-value">8g</div>
+              <div class="nutrient-label">Fat</div>
+            </div>
+            <div class="nutrient-card">
+              <div class="nutrient-value">1g</div>
+              <div class="nutrient-label">Saturated Fat</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

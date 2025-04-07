@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Velma's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        header {
+            background-color: #1b0107;
+            padding: 1rem 0;
+        }
+        header h1, nav a {
+            color: white;
+        }
+        nav a:hover, nav a.active {
+            color: #D4A59A;
+        }
+        nav a.active::after {
+            background-color: #D4A59A;
+        }
+        footer {
+            background-color: #220109;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Velma Akoth Katito</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Recipes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h1>My Recipes</h1>
+            <p>Click any recipe card to view full details</p>
+
+            <div class="recipe-cards">
+                <a href="honey-garlic-chicken.html" class="recipe-card">
+                    <div class="card-image">
+                        <img src="Double Crunch Honey Garlic Chicken Breasts.jpg" alt="Honey Garlic Chicken Breast">
+                    </div>
+                    <div class="card-content">
+                        <h3>Honey Garlic Chicken Breast</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 25 mins</span>
+                            <span><i class="fas fa-users"></i> Serves 4</span>
+                        </div>
+                        <div class="hover-details">
+                            <p>Juicy chicken breasts glazed with sweet honey garlic sauce</p>
+                            <span class="view-recipe">View Recipe →</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="crispy-french-fries.html" class="recipe-card">
+                    <div class="card-image">
+                        <img src="French Fries are a universally beloved snack known….jpg" alt="Crispy French Fries">
+                    </div>
+                    <div class="card-content">
+                        <h3>Crispy French Fries</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 40 mins</span>
+                            <span><i class="fas fa-users"></i> Serves 4</span>
+                        </div>
+                        <div class="hover-details">
+                            <p>Golden crispy fries with perfect fluffy interior</p>
+                            <span class="view-recipe">View Recipe →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Velma Akoth Katito | 
+                <a href="https://tiktok.com/veejanes0" target="_blank"><i class="fab fa-tiktok"></i></a> 
+                <a href="tel:0745771934"><i class="fas fa-phone"></i></a> 
+                <a href="mailto:katitovelma@gmail.com"><i class="fas fa-envelope"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

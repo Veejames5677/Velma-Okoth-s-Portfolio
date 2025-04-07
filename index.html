@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Velma Akoth Katito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Burgundy Header & Footer */
+        header {
+            background-color: #800020;
+            padding: 1rem 0;
+        }
+        header h1, nav a {
+            color: white;
+        }
+        nav a:hover, nav a.active {
+            color: #D4A59A;
+        }
+        nav a.active::after {
+            background-color: #D4A59A;
+        }
+        footer {
+            background-color: #800020;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Velma Akoth Katito</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="./images/velma.jpg" alt="Velma Akoth Katito" class="profile-img">
+            <h2>Hi, I'm Velma — Microbiology Enthusiast at JKUAT</h2>
+            <p>I'm passionate about exploring the unseen world of microbes. Currently studying Microbiology at Jomo Kenyatta University of Agriculture and Technology, I aim to innovate solutions in healthcare and environmental science.</p>
+            <a href="about.html" class="btn">Learn More About Me</a>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <div class="container">
+            <h2><i class="fas fa-bolt"></i> What I Do</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Research & Lab Work</h3>
+                    <p>Skilled in staining, culturing, and identifying microorganisms using standard microbiological techniques.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Innovation</h3>
+                    <p>Exploring sustainable microbial solutions for healthcare, agriculture, and environmental challenges.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Continuous Learning</h3>
+                    <p>Always leveling up with certifications, workshops, and conferences to stay ahead in microbiology research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Velma Akoth Katito | 
+                <a href="https://tiktok.com/veejanes0" target="_blank"><i class="fab fa-tiktok"></i></a> 
+                <a href="mailto:katitovelma@gmail.com"><i class="fas fa-envelope"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
